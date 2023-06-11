@@ -23,7 +23,7 @@
         border:none;
         background-color:#ffffff;
       }
-      #disbut:hover {
+      .dropdown:hover #disbut {
         text-decoration:underline;
         text-decoration-color: #F5D018;
         text-underline-offset:8px;
@@ -37,6 +37,45 @@
         padding:0px;
         border:none;
         background-color:#ffffff;
+      }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        min-width: 160px;
+        border: 1px solid black;
+        box-shadow: 6px 6px rgba(0,0,0,1); 
+        -o-box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
+        border-radius:13px;
+      }
+      #ch {
+        color: #625D53;
+        padding: 9px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+        border-top-left-radius: 13px;
+        border-top-right-radius: 13px;
+      }
+      #faq {
+        color: #625D53;
+        padding: 9px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+        border-bottom-left-radius: 13px;
+        border-bottom-right-radius: 13px;
+      }
+      .dropdown-content a:hover {
+        background-color: #ddd;
+        
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
       }
       #abut:hover {
         text-decoration:underline;
@@ -84,7 +123,13 @@
       <div style="display:flex;align-items:center;font-family:DM Sans;margin-right:20px;justify-content:space-between;">
         <nav style="font-size:20px;" id="navigation">
           <a href="./shop.html" id="shopbut">Shop</a>
-          <a href="./discover.html" id="disbut">Discover</a>
+          <div class="dropdown">
+            <p class="disbutton" id="disbut">Discover</p>
+            <div class="dropdown-content">
+              <a href="#" id="ch">Choose the Charity</a>
+              <a href="#" id="faq">FAQ</a>
+            </div>
+          </div>
           <a href="./about.html" id="abut">About</a>
         </nav>
         <a href="./cart.html">
@@ -93,16 +138,19 @@
       </div>
     </div>
     </div>
-    <div style="display:flex;background-color:#FFB0C5;padding:20px;color:#fff;height:600px;">
+    <div style="display:flex;background-color:#FFffff;padding:20px;color:#fff;height:800px;">
       <p>Hello there.</p>
     </div>
-    <div style="display:flex;background-color:#ffffff;padding:20px;color:#fff;height:600px;">
+    <div style="display:flex;background-color:#FFB0C5;padding:20px;color:#fff;height:800px;">
       <p>Hello there.</p>
     </div>
-    <div style="display:flex;background-color:#FFD304;padding:20px;color:#fff;height:600px;">
+    <div style="display:flex;background-color:#FFD304;padding:20px;color:#fff;height:800px;">
       <p>Hello there.</p>
     </div>
-    <div style="display:flex;background-color:#DEDEDE;padding:20px;color:#fff;height:600px;">
+    <div style="display:flex;background-color:#DEDEDE;padding:20px;color:#fff;height:800px;">
+      <p>Hello there.</p>
+    </div>
+    <div style="display:flex;background-color:#000;padding:20px;color:#fff;height:450px;">
       <p>Hello there.</p>
     </div>
   </body>
