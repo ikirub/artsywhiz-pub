@@ -217,6 +217,9 @@
         text-decoration-color: #F5D018;
         text-underline-offset:15px;
       }
+      #webintro {
+          margin-top:0px;
+      }
       @media only screen and (max-width: 710px) {
         #navigation {
           display: none;
@@ -246,6 +249,9 @@
       @media only screen and (max-width: 465px) {
         #thehead {
           font-size: 23px;
+        }
+        #webintro {
+          margin-top:-40px;
         }
         #headercont {
           width: calc(100% - 35px);
@@ -311,8 +317,9 @@
           <a href="./about.html">About</a>
         </div>
       </div>
-    </div>
-    <!-- where drawing image -->
+    <div>
+      <div style="height:150px;background-color:#FEFEFE"></div>
+    <image id="webintro" src="web-intro.svg" width=100% height=100%></image>
     </div>
     <div style="display:flex;background-color:#FFB0C5;padding:20px;color:#fff;height:800px;">
       <p>Hello there.</p>
