@@ -178,13 +178,13 @@
       }
       #menubut {
         display: none;
-        font-color: white;
+        color: white;
         font-size: 0px;
         user-select: none;
       }
       #closemen {
         display: none;
-        font-color: white;
+        color: white;
         font-size: 0px;
         user-select: none;
       }
@@ -228,8 +228,15 @@
         scrollbar-width: none; 
         -ms-overflow-style: none; 
       }
-      #boo::-webkit-scrollbar {
-          display: none;
+      ::-webkit-scrollbar {
+        width: 15px;
+        margin: 30px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #A2A2A2; 
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #848484; 
       }
       @media only screen and (max-width: 710px) {
         #navigation {
@@ -280,12 +287,6 @@
         }
         #where {
           margin-top:110px;
-        }
-        #webintro {
-          -moz-box-sizing: border-box;
-          box-sizing: border-box;
-          background: url(https://images.unsplash.com/photo-1627412466304-5ea99923ab5a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyODAyNTc5NQ&ixlib=rb-1.2.1&q=80&w=400)
-            no-repeat;
         }
       }
       @media only screen and (max-width:339px) {
