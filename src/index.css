@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-artsy-brown bg-artsy-cream;
+    scrollbar-width: thin;
+    scrollbar-color: #A2A2A2 transparent;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #A2A2A2;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #848484;
+  }
+}
+
+@layer utilities {
+  .yellow-underline {
+    text-decoration: underline;
+    text-decoration-color: #F5D018;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
+  }
+}
