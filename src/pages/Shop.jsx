@@ -39,9 +39,9 @@ export default function Shop() {
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="mb-10">
-          <h1 className="text-5xl font-bold text-artsy-brown mb-3">Shop</h1>
+          <h1 className="text-5xl font-bold text-artsy-brown mb-3">The Collection</h1>
           <p className="text-gray-500 text-lg">
-            Artist-grade materials for every medium and skill level.
+            Original drawings and illustrations by the Artsy Whiz team. Every piece is one of a kind.
           </p>
         </div>
 

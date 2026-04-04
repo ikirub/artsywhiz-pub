@@ -3,31 +3,31 @@ import { featured } from '../data/products'
 
 const categories = [
   {
-    title: 'Watercolor',
-    desc: 'Luminous, flowing, and endlessly expressive. Discover transparent pigments that bloom on wet paper.',
+    title: 'Portraits',
+    desc: 'Expressive faces, character studies, and human form — each piece drawn by hand by our team.',
     bg: 'bg-artsy-pink',
-    emoji: '💧',
+    emoji: '🖤',
     to: '/shop',
   },
   {
-    title: 'Acrylics',
-    desc: 'Versatile and vibrant. Build texture, glaze with transparency, or paint flat fields of bold colour.',
+    title: 'Landscapes',
+    desc: 'From misty valleys to busy city streets, our artists capture places with ink, graphite, and wash.',
     bg: 'bg-artsy-yellow',
-    emoji: '🎨',
+    emoji: '🏔️',
     to: '/shop',
   },
   {
-    title: 'Drawing',
-    desc: 'From a first sketch to a finished illustration — pencils, inks, and markers for every hand.',
+    title: 'Illustration',
+    desc: 'Detailed botanicals, characters, and narrative scenes. Original drawings made to live on your wall.',
     bg: 'bg-artsy-gray',
-    emoji: '✏️',
+    emoji: '🌿',
     to: '/shop',
   },
   {
-    title: 'Oil Painting',
-    desc: 'Rich, slow-drying, and deeply rewarding. The classic medium of the masters, now for everyone.',
+    title: 'Abstract',
+    desc: 'Bold compositions and gestural studies that invite a different reading every time you look.',
     bg: 'bg-stone-200',
-    emoji: '🖼️',
+    emoji: '◼',
     to: '/shop',
   },
 ]
@@ -75,31 +75,31 @@ export default function Home() {
           {/* Text */}
           <div>
             <span className="inline-block bg-artsy-yellow text-artsy-brown text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
-              Art Supplies + Impact
+              Original Art · Handmade
             </span>
             <h1 className="text-5xl sm:text-6xl font-bold text-artsy-brown leading-tight mb-6">
-              Unleash Your <span className="yellow-underline">Creativity</span>
+              Own Original Art by <span className="yellow-underline">Real Artists</span>
             </h1>
             <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-md">
-              Premium drawing and painting materials, curated for artists at every level. Every purchase you make helps fund arts education for those who need it most.
+              Every piece in our collection is drawn by hand by our team — portraits, landscapes, illustrations, and abstracts. No prints, no AI, no reproductions. Just original drawings ready for your wall.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
                 to="/shop"
                 className="bg-black text-white font-semibold px-8 py-4 rounded-full hover:bg-artsy-brown transition-colors shadow-[4px_4px_0px_rgba(0,0,0,0.2)]"
               >
-                Shop Now
+                Browse the Collection
               </Link>
               <Link
-                to="/discover"
+                to="/about"
                 className="border-2 border-black text-artsy-brown font-semibold px-8 py-4 rounded-full hover:bg-artsy-gray transition-colors"
               >
-                Our Mission
+                Our Story
               </Link>
             </div>
             {/* Trust row */}
             <div className="flex flex-wrap gap-6 mt-10 text-sm text-gray-500">
-              <span className="flex items-center gap-2">✅ Artist-grade quality</span>
+              <span className="flex items-center gap-2">✅ Hand-drawn originals</span>
               <span className="flex items-center gap-2">🎁 Free shipping over $50</span>
               <span className="flex items-center gap-2">💛 1% to arts charities</span>
             </div>
@@ -127,9 +127,9 @@ export default function Home() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-artsy-brown mb-3">Explore by Medium</h2>
+            <h2 className="text-4xl font-bold text-artsy-brown mb-3">Explore by Style</h2>
             <p className="text-gray-500 text-lg max-w-xl mx-auto">
-              Whether you're picking up a brush for the first time or refining a lifelong practice, we have the right tools.
+              Our team works across subjects and styles. Find a piece that speaks to you.
             </p>
           </div>
 
@@ -157,8 +157,8 @@ export default function Home() {
         <div className="max-w-5xl mx-auto">
           <div className="flex items-end justify-between mb-12">
             <div>
-              <h2 className="text-4xl font-bold text-artsy-brown mb-2">Featured Products</h2>
-              <p className="text-gray-500">Handpicked favourites from our collection.</p>
+              <h2 className="text-4xl font-bold text-artsy-brown mb-2">Featured Works</h2>
+              <p className="text-gray-500">Handpicked originals from our latest drawings.</p>
             </div>
             <Link
               to="/shop"
@@ -191,10 +191,10 @@ export default function Home() {
           {/* Stats */}
           <div className="grid grid-cols-2 gap-5">
             {[
-              { value: '500+', label: 'Products curated' },
+              { value: '50+', label: 'Original works available' },
               { value: '1%', label: 'Of every sale donated' },
-              { value: '12', label: 'Charity partners' },
-              { value: '10k+', label: 'Happy creators' },
+              { value: '3', label: 'Charity partners' },
+              { value: '500+', label: 'Happy collectors' },
             ].map(stat => (
               <div
                 key={stat.label}
@@ -212,13 +212,13 @@ export default function Home() {
               Art + Impact
             </span>
             <h2 className="text-4xl font-bold mb-5 leading-tight">
-              Every purchase funds a young artist's future
+              Every piece you collect helps a young artist find their voice
             </h2>
             <p className="text-gray-400 leading-relaxed mb-5">
-              We believe creativity shouldn't be a privilege. 1% of every sale goes directly to arts education programs and community studios that give young artists access to the tools and mentorship they need to thrive.
+              We believe original art should be accessible — to buy and to make. 1% of every sale goes directly to arts education programmes and community studios that give young artists access to the tools and mentorship they need.
             </p>
             <p className="text-gray-400 leading-relaxed mb-8">
-              You choose where it goes. Each month, we highlight a new charity partner — and you vote on where the collective fund is directed.
+              You choose where it goes. Each month we highlight a new charity partner — and you vote on where the collective fund is directed.
             </p>
             <Link
               to="/discover"
@@ -235,27 +235,27 @@ export default function Home() {
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-artsy-brown mb-3">Why Artsy Whiz?</h2>
           <p className="text-gray-500 text-lg mb-14 max-w-xl mx-auto">
-            We're not just a shop. We're a community built around the belief that making art makes life better.
+            Original art, made by people — not machines, not factories.
           </p>
 
           <div className="grid sm:grid-cols-3 gap-6">
             {[
               {
-                icon: '⭐',
-                title: 'Artist-Grade Quality',
-                desc: "Every product is tested by working artists. We only stock what we'd use ourselves.",
+                icon: '✍️',
+                title: 'Genuinely Hand-Drawn',
+                desc: 'Every piece is drawn by our team. No AI, no mass-production, no stock art. What you buy is the real thing.',
                 bg: 'bg-artsy-yellow',
               },
               {
-                icon: '🌍',
-                title: 'Ethical Sourcing',
-                desc: 'We partner with suppliers who use sustainable materials and fair labour practices.',
+                icon: '💰',
+                title: 'No Gallery Markup',
+                desc: 'We sell directly to you. Our prices reflect the artist\'s time fairly — without a gallery taking half.',
                 bg: 'bg-artsy-pink',
               },
               {
                 icon: '📦',
                 title: 'Free Shipping over $50',
-                desc: 'Fast, carbon-neutral delivery across the country. No minimum order faff.',
+                desc: 'Fast, carbon-neutral delivery across the country. Every piece is carefully packaged to arrive in perfect condition.',
                 bg: 'bg-artsy-gray',
               },
             ].map(item => (
@@ -277,15 +277,15 @@ export default function Home() {
       {/* ── CTA Banner ── */}
       <section className="py-16 px-6 bg-artsy-pink border-y border-black">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-artsy-brown mb-4">Ready to start creating?</h2>
+          <h2 className="text-4xl font-bold text-artsy-brown mb-4">Find art you'll love forever.</h2>
           <p className="text-artsy-brown/70 text-lg mb-8">
-            Browse over 500 curated art supplies — and help build a more creative world while you're at it.
+            Browse our collection of original drawings — each one a one-of-a-kind piece by a real artist.
           </p>
           <Link
             to="/shop"
             className="inline-block bg-black text-white font-semibold px-10 py-4 rounded-full hover:bg-artsy-brown transition-colors shadow-[4px_4px_0px_rgba(0,0,0,0.3)]"
           >
-            Shop the Collection
+            Browse the Collection
           </Link>
         </div>
       </section>

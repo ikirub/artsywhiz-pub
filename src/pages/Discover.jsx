@@ -39,16 +39,16 @@ const faqs = [
     a: 'All partner charities are registered non-profits and have been independently reviewed for financial transparency and impact by a third-party auditor. We re-evaluate partners annually.',
   },
   {
-    q: 'What products are eligible for free shipping?',
-    a: 'All orders over $50 qualify for free standard shipping anywhere in the country. Orders under $50 attract a flat $5.99 shipping fee. Express and international options are available at checkout.',
+    q: 'Are the drawings truly original — not prints?',
+    a: 'Yes, every piece listed as an original is the actual, one-of-a-kind drawing made by our team. Once it\'s sold, it\'s gone. We do not sell prints or reproductions.',
   },
   {
-    q: 'Do you offer student or school discounts?',
-    a: 'Yes — students with a valid institution email receive 10% off all orders. Schools and institutions can contact us for bulk pricing.',
+    q: 'How are artworks packaged and shipped?',
+    a: 'All originals are wrapped in acid-free tissue and shipped flat in rigid board mailers to prevent any bending or damage. Orders over $50 ship free; orders under $50 attract a flat $5.99 fee.',
   },
   {
     q: 'What is your returns policy?',
-    a: 'We offer a 30-day no-questions-asked return policy for unused items in original packaging. If a product is defective, we\'ll replace it or refund you in full, no return necessary.',
+    a: 'We want you to love what you receive. If a piece arrives damaged or is not as described, contact us within 7 days and we\'ll make it right with a replacement or full refund.',
   },
 ]
 
@@ -84,7 +84,7 @@ export default function Discover() {
           Art that gives back.
         </h1>
         <p className="text-xl text-gray-500 leading-relaxed max-w-2xl">
-          Shopping with us means supporting the arts beyond your own studio. Every month, 1% of all sales is donated to one of our charity partners — and you decide where it goes.
+          Collecting art with us means supporting the arts beyond your own walls. Every month, 1% of all sales is donated to one of our charity partners — and you decide where it goes.
         </p>
       </section>
 
@@ -95,6 +95,7 @@ export default function Discover() {
           <p className="text-gray-500 text-lg mb-12">
             Our current partner organisations. After each purchase, you vote on where the monthly fund is directed.
           </p>
+
           <div className="grid sm:grid-cols-3 gap-6 mb-10">
             {charities.map(c => (
               <div
@@ -120,7 +121,7 @@ export default function Discover() {
             <h3 className="text-2xl font-bold mb-8">How it works</h3>
             <div className="grid sm:grid-cols-3 gap-6">
               {[
-                { step: '01', title: 'You shop', desc: 'Browse our full collection and add your favourite supplies to your cart.' },
+                { step: '01', title: 'You collect', desc: 'Browse our collection of original drawings and find a piece you love.' },
                 { step: '02', title: 'We donate', desc: '1% of your order total is added to that month\'s charity fund — automatically, at no extra cost to you.' },
                 { step: '03', title: 'You vote', desc: 'You\'ll get an email with a link to cast your vote on which charity receives the most that month.' },
               ].map(item => (
@@ -140,7 +141,7 @@ export default function Discover() {
         <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl font-bold text-artsy-brown mb-3">Frequently Asked Questions</h2>
           <p className="text-gray-500 text-lg mb-10">
-            Everything you need to know about our products, shipping, and charity programme.
+            Everything you need to know about buying original art, shipping, and our charity programme.
           </p>
           <div className="flex flex-col gap-4">
             {faqs.map(faq => (
@@ -153,15 +154,15 @@ export default function Discover() {
       {/* CTA */}
       <section className="px-6 py-16 bg-artsy-pink border-y border-black">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-artsy-brown mb-4">Start creating. Start giving.</h2>
+          <h2 className="text-4xl font-bold text-artsy-brown mb-4">Find your piece. Support the arts.</h2>
           <p className="text-artsy-brown/70 text-lg mb-8">
-            Every brush stroke you make helps a young artist find theirs.
+            Every original drawing you collect helps a young artist find their voice.
           </p>
           <Link
             to="/shop"
             className="inline-block bg-black text-white font-semibold px-10 py-4 rounded-full hover:bg-artsy-brown transition-colors"
           >
-            Shop the Collection
+            Browse the Collection
           </Link>
         </div>
       </section>

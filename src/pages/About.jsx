@@ -2,15 +2,15 @@ import { Link } from 'react-router-dom'
 
 const values = [
   {
-    icon: '🎨',
+    icon: '✍️',
     title: 'Art for Everyone',
-    desc: 'We believe creativity is a fundamental human need, not a luxury. Our job is to remove barriers — financial, informational, or otherwise — so anyone can pick up a brush and begin.',
+    desc: 'Original art shouldn\'t live only in galleries. We price our work to be owned — so that real people can hang real art in their homes without paying gallery prices.',
     bg: 'bg-artsy-pink',
   },
   {
-    icon: '🌱',
-    title: 'Quality That Lasts',
-    desc: 'Cheap supplies produce frustration. Artist-grade materials let your ideas shine through without fighting your tools. Everything we stock is tested and chosen with care.',
+    icon: '🖊️',
+    title: 'Authenticity First',
+    desc: 'Every piece is drawn by hand by our team. No prints, no AI, no reproductions. You get the actual drawing — exactly as it left the artist\'s desk.',
     bg: 'bg-artsy-yellow',
   },
   {
@@ -25,7 +25,7 @@ const team = [
   {
     name: 'Nithilaa',
     role: 'Founder & Creative Director',
-    bio: 'A fine arts graduate with a decade of painting experience, Nithilaa started Artsy Whiz out of frustration: great art supplies were either impossible to find or prohibitively expensive. She set out to change that.',
+    bio: 'A fine arts graduate and the driving creative force behind Artsy Whiz. Nithilaa founded the studio to bring original, hand-drawn art directly to people who love it — without the gallery barrier.',
     emoji: '👩‍🎨',
     bg: 'bg-artsy-pink',
   },
@@ -40,10 +40,10 @@ export default function About() {
           Our Story
         </span>
         <h1 className="text-5xl sm:text-6xl font-bold text-artsy-brown leading-tight mb-6 max-w-2xl">
-          We're obsessed with helping people make art.
+          We're a team of artists who draw for a living.
         </h1>
         <p className="text-xl text-gray-500 leading-relaxed max-w-2xl">
-          Artsy Whiz was born from a simple idea: everyone has a creative spark, and the right tools fan that flame. We're a small team of artists and art lovers who carefully curate every product we sell — and use the business to give back to arts communities.
+          Artsy Whiz is our studio's window to the world. Every piece in our collection is drawn by hand by our team and sold directly to the people who love it — no middlemen, no markups, no reproductions. Just original art made by real people.
         </p>
       </section>
 
@@ -109,16 +109,16 @@ export default function About() {
       {/* CTA */}
       <section className="px-6 py-16 bg-black text-white">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-4">Come make something with us.</h2>
+          <h2 className="text-4xl font-bold mb-4">Find a piece you'll keep forever.</h2>
           <p className="text-gray-400 text-lg mb-8">
-            Browse the shop, learn about our charity partners, or just say hello.
+            Browse our collection, learn about our charity partners, or just say hello.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               to="/shop"
               className="bg-artsy-yellow text-black font-semibold px-8 py-4 rounded-full hover:opacity-90 transition-opacity"
             >
-              Shop Now
+              Browse the Collection
             </Link>
             <Link
               to="/discover"
